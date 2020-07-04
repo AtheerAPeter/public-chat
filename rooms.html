@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="/img/log-in.svg" />
+    <link rel="stylesheet" href="styles/roomstyle.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>chat</title>
+  </head>
+  <body>
+    <div class="box">
+      <form action="chat.html">
+        <h3>Select a room to join</h3>
+        <select name="select" id="select">
+          <option value="room1">Room1</option>
+          <option value="room2">Room2</option>
+          <option value="room3">Room3</option>
+        </select>
+        <button onclick="selectRoom()">Join</button>
+      </form>
+      <button class="logoutbtn" onclick="redirect2()">Logout</button>
+    </div>
+
+    <script src="rooms.js"></script>
+  </body>
+</html>

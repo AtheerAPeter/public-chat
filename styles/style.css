@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  height: 80vh;
+  background: #eeeeee;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: none;
+  border-radius: 29px;
+  background: #eeeeee;
+  box-shadow: 5px 5px 10px #cacaca, -5px -5px 10px #ffffff;
+  padding: 1em;
+}
+
+label {
+  font-family: "Nunito", sans-serif;
+  color: rgb(117, 117, 117);
+  margin-top: 5px;
+  font-weight: bold;
+}
+input {
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
+  border-radius: 10px;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  box-shadow: inset 5px 5px 10px #cacaca, -5px -5px 10px #ffffff;
+  background-color: #eeeeee;
+  -webkit-animation: shadowFadeOut 0.5s ease-in-out;
+  transition: all 0.5s ease;
+}
+input:focus {
+  -webkit-animation: shadowFade 0.5s;
+  box-shadow: 5px 5px 10px #cacaca, -5px -5px 10px #ffffff;
+  padding: 12px 20px 12px 20px;
+}
+@-webkit-keyframes shadowFade {
+  0% {
+    box-shadow: inset 5px 5px 10px #cacaca, -5px -5px 10px #ffffff;
+  }
+  25% {
+    box-shadow: inset 5px 5px 5px #cacaca, -5px -5px 5px #ffffff;
+  }
+  50% {
+    box-shadow: none;
+  }
+  75% {
+    box-shadow: 5px 5px 5px #cacaca, -5px -5px 5px #ffffff;
+  }
+  100% {
+    box-shadow: 5px 5px 10px #cacaca, -5px -5px 10px #ffffff;
+  }
+}
+
+@-webkit-keyframes shadowFadeOut {
+  0% {
+    box-shadow: 5px 5px 10px #cacaca, -5px -5px 10px #ffffff;
+  }
+  25% {
+    box-shadow: 5px 5px 5px #cacaca, -5px -5px 5px #ffffff;
+  }
+
+  50% {
+    box-shadow: none;
+  }
+  75% {
+    box-shadow: inset 5px 5px 5px #cacaca, -5px -5px 5px #ffffff;
+  }
+
+  100% {
+    box-shadow: inset 5px 5px 10px #cacaca, -5px -5px 10px #ffffff;
+  }
+}
+button {
+  width: 100px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.1s ease;
+  outline: none;
+  box-shadow: 5px 5px 10px #cacaca, -5px -5px 10px #ffffff;
+  color: rgb(74, 74, 212);
+}
+button:hover {
+  box-shadow: 10px 10px 10px #cacaca, -10px -10px 10px #ffffff;
+  width: 120px;
+  height: 50px;
+}
+
+.signup-link {
+  text-decoration: none;
+  color: rgb(117, 117, 117);
+  margin-top: 10px;
+}
+
+.signup-link:visited {
+  text-decoration: none;
+  color: rgb(117, 117, 117);
+  margin-top: 10px;
+}
+.signup-link:active {
+  text-decoration: none;
+  color: rgb(117, 117, 117);
+  margin-top: 10px;
+}
+.signup-link:checked {
+  text-decoration: none;
+  color: rgb(117, 117, 117);
+  margin-top: 10px;
+}
+
+.after-login-container {
+  display: flex;
+  width: 400px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.after-login-container .joinbtn {
+  width: 150px;
+  color: rgb(74, 74, 212);
+}
+
+.after-login-container h1 {
+  text-align: center;
+}
+.error_message {
+  display: flex;
+  background-color: rgb(236, 93, 93);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: #ec5d73;
+  box-shadow: inset 5px 5px 10px #b8495a, inset -5px -5px 10px #ff718c;
+  display: none;
+}
+.logoutbtn {
+  color: #eb435c;
+}

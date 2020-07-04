@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/signup.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div id="signup_div" class="form-container">
+      <h1>
+        Signup
+      </h1>
+      <h4 id="error_message" class="error_message"></h4>
+      <label for="username_field">User name</label>
+      <input
+        type="text"
+        id="username_field"
+        placeholder="User name..."
+        required
+      />
+      <label for="email_field">Email</label>
+      <input
+        id="email_field"
+        placeholder="Example@domain.com"
+        type="email"
+        required
+      />
+      <label for="password_field">Password</label>
+      <input
+        id="password_field"
+        placeholder="6 characters minimum"
+        type="password"
+        required
+      />
+      <button class="signupbtn" onclick="create_account()">Signup</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "",
+        authDomain: "",
+        databaseURL: "",
+        projectId: "",
+        storageBucket: "",
+        messagingSenderId: "",
+        appId: "",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="signup.js"></script>
+  </body>
+</html>

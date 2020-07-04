@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="/img/log-in.svg" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>chat</title>
+  </head>
+  <body>
+    <div id="login_div" class="form-container">
+      <h1>
+        Login
+      </h1>
+      <h4 id="error_message" class="error_message"></h4>
+      <!-- <label for="username_field">User name</label>
+      <input type="text" id="username_field" placeholder="User name..." /> -->
+      <label for="email_field">Email</label>
+      <input
+        id="email_field"
+        placeholder="Example@domain.com"
+        type="email"
+        autocomplete="off"
+      />
+      <label for="password_field">Password</label>
+      <input id="password_field" placeholder="Password..." type="password" />
+      <button onclick="login()" id="submit">Login</button>
+      <a class="signup-link" href="signup.html">New user? create an account</a>
+    </div>
+    <div id="user_div" class="after-login-container">
+      <h1 id="thanks"></h1>
+      <label for="uname">Choose a display name</label>
+      <input type="text" placeholder="User name" id="uname" />
+      <button class="joinbtn" onclick="redirect()">Go to chat</button>
+
+      <button onclick="logout()" class="logoutbtn">Log out</button>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "",
+        authDomain: "",
+        databaseURL: "",
+        projectId: "",
+        storageBucket: "",
+        messagingSenderId: "",
+        appId: "",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
